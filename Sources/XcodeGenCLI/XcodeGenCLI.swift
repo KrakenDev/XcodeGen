@@ -15,7 +15,10 @@ public class XcodeGenCLI {
             description: "Generates Xcode projects",
             commands: [generateCommand]
         )
-        cli.parser = Parser(router: CommandRouter(defaultCommand: generateCommand))
+        cli.parser = Parser()
+        cli.argumentListManipulators.append(CommandRouter(
+            defaultCommand: generateCommand
+        ))
     }
 
     public func execute(arguments: [String]? = nil) {

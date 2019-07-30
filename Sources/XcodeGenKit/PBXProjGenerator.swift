@@ -207,7 +207,7 @@ public class PBXProjGenerator {
             .merged(project.attributes)
 
         let knownRegions = sourceGenerator.knownRegions.sorted()
-        pbxProject.knownRegions = knownRegions.isEmpty ? ["en"] : knownRegions
+        pbxProject.knownRegions = knownRegions.isEmpty ? ["en, Base"] : knownRegions
 
         let allTargets: [PBXTarget] = Array(targetObjects.values) + Array(targetAggregateObjects.values)
         pbxProject.targets = allTargets

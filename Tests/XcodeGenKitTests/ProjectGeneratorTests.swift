@@ -902,7 +902,6 @@ class ProjectGeneratorTests: XCTestCase {
                 var expectedInfoPlist: [String: Any] = [:]
                 expectedInfoPlist["CFBundleIdentifier"] = "$(PRODUCT_BUNDLE_IDENTIFIER)"
                 expectedInfoPlist["CFBundleInfoDictionaryVersion"] = "6.0"
-                expectedInfoPlist["CFBundleExecutable"] = "$(EXECUTABLE_NAME)"
                 expectedInfoPlist["CFBundleName"] = "$(PRODUCT_NAME)"
                 expectedInfoPlist["CFBundleDevelopmentRegion"] = "$(DEVELOPMENT_LANGUAGE)"
                 expectedInfoPlist["CFBundleShortVersionString"] = "1.0"

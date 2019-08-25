@@ -15,7 +15,7 @@ let package = Package(
         .package(url: "https://github.com/yonaskolb/JSONUtilities.git", from: "4.2.0"),
         .package(url: "https://github.com/kylef/Spectre.git", from: "0.9.0"),
         .package(url: "https://github.com/onevcat/Rainbow.git", from: "3.1.5"),
-        .package(url: "https://github.com/KrakenDev/xcodeproj.git", .branch("master")),
+        .package(url: "https://github.com/KrakenDev/XcodeProj.git", .branch("master")),
         .package(url: "https://github.com/jakeheis/SwiftCLI.git", from: "5.3.2"),
     ],
     targets: [

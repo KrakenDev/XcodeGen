@@ -12,7 +12,6 @@ public class InfoPlistGenerator {
         var dictionary: [String: Any] = [:]
         dictionary["CFBundleIdentifier"] = "$(PRODUCT_BUNDLE_IDENTIFIER)"
         dictionary["CFBundleInfoDictionaryVersion"] = "6.0"
-        dictionary["CFBundleExecutable"] = "$(EXECUTABLE_NAME)"
         dictionary["CFBundleName"] = "$(PRODUCT_NAME)"
         dictionary["CFBundleDevelopmentRegion"] = "$(DEVELOPMENT_LANGUAGE)"
         dictionary["CFBundleShortVersionString"] = "1.0"
